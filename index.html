@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MERIDIAN — 3D Architecture Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">MERIDIAN<span>·</span>STUDIO</div>
+  <nav>
+    <ul>
+      <li><a href="#home" class="nav-link active" data-target="home">Home</a></li>
+      <li><a href="#projects" class="nav-link" data-target="projects">Projects</a></li>
+      <li><a href="#modelview" class="nav-link" data-target="modelview">3D Model View</a></li>
+      <li><a href="#about" class="nav-link" data-target="about">About</a></li>
+      <li><a href="#contact" class="nav-link" data-target="contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HOME -->
+ 
+<section id="home">
+    <div class="hero-top">
+
+    <div class="student-card">
+
+        <img
+        class="student-photo"
+        src="myphoto.jpg.jpeg"
+        alt="faizan ali">
+
+        <h2>Faizan Ali</h2>
+
+        <p>
+            I am very happy to build this 3D Architecture Studio project.
+            This website demonstrates my skills in HTML, CSS, JavaScript and
+            Three.js. I enjoy creating modern, interactive and responsive web
+            applications.
+        </p>
+
+    </div>
+
+    <div class="hero-text">
+
+        <div class="eyebrow">
+            STUDENT PORTFOLIO
+        </div>
+
+        <h1>
+            We show buildings
+            <em>before</em>
+            they exist.
+        </h1>
+
+        <p class="hero-sub">
+            Meridian Studio transforms architectural drawings into beautiful
+            interactive 3D experiences.
+        </p>
+        <section id="skills" class="container reveal">
+
+    <div class="section-head">
+        <div>
+            <div class="section-num">05 — My Skills</div>
+            <h2>Technical Skills</h2>
+        </div>
+    </div>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">
+            <h3>HTML5</h3>
+            <div class="bar"><span style="width:95%"></span></div>
+        </div>
+
+        <div class="skill-card">
+            <h3>CSS3</h3>
+            <div class="bar"><span style="width:90%"></span></div>
+        </div>
+
+        <div class="skill-card">
+            <h3>JavaScript</h3>
+            <div class="bar"><span style="width:85%"></span></div>
+        </div>
+
+        <div class="skill-card">
+            <h3>Three.js</h3>
+            <div class="bar"><span style="width:80%"></span></div>
+        </div>
+
+        <div class="skill-card">
+            <h3>Git & GitHub</h3>
+            <div class="bar"><span style="width:75%"></span></div>
+        </div>
+
+    </div>
+
+</section>
+
+       <div class="contact-box">
+
+    <a href="tel:03706621683" class="contact-card">
+        <span>📞</span>
+        <h4>Phone</h4>
+        <p>03706621683</p>
+    </a>
+
+    <a href="mailto:faizanali766755@gmail.com" class="contact-card">
+        <span>📧</span>
+        <h4>Email</h4>
+        <p>faizanali766755@gmail.com</p>
+    </a>
+
+    <a href="https://www.linkedin.com/in/faizan-ali-022b51396?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+       target="_blank"
+       class="contact-card">
+        <span>💼</span>
+        <h4>LinkedIn</h4>
+        <p>Visit Profile</p>
+    </a>
+
+</div>
+        </div>
+
+    </div>
+
+</div>
+
+  <div class="eyebrow">Mtech-Web26012 / Architecture, rendered</div>
+  <h1>We show buildings <em>before</em> they exist.</h1>
+  <p class="hero-sub">Meridian Studio turns architectural drawings into rotatable 3D models — so clients can walk through a project, floor by floor, long before the first brick is laid.</p>
+
+  <div class="hero-grid">
+  <div class="spec-row">
+
+    <div class="counter-box">
+        <span class="counter" data-target="25">0</span>
+        <small>Projects Completed</small>
+    </div>
+
+    <div class="counter-box">
+        <span class="counter" data-target="12">0</span>
+        <small>3D Models</small>
+    </div>
+
+    <div class="counter-box">
+        <span class="counter" data-target="100">0</span>
+        <small>Client Satisfaction %</small>
+    </div>
+
+    <div class="counter-box">
+        <span class="counter" data-target="4">0</span>
+        <small>Years Learning</small>
+    </div>
+
+</div>
+      <div><span>04</span>Live studio projects</div>
+      <div><span>360°</span>Rotatable per model</div>
+      <div><span>1:1</span>Wireframe / solid view</div>
+    </div>
+    <div class="viewer-card">
+      <div id="canvas-wrap"></div>
+      <div class="viewer-label">Model 01 — Riverline Tower</div>
+      <div class="viewer-controls">
+        <button class="vc-btn" id="hero-wire-btn">Wireframe</button>
+        <button class="vc-btn" id="hero-spin-btn">Auto-rotate</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="container reveal">
+  <div class="section-head">
+    <div>
+      <div class="section-num">01 — Selected Work</div>
+      <h2>Projects</h2>
+    </div>
+    <div class="filters" id="filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="residential">Residential</button>
+      <button class="filter-btn" data-filter="commercial">Commercial</button>
+      <button class="filter-btn" data-filter="civic">Civic</button>
+    </div>
+  </div>
+  <div class="project-grid" id="project-grid"></div>
+</section>
+
+<!-- MODEL VIEW -->
+<section id="modelview" class="container reveal">
+  <div class="section-head">
+    <div>
+      <div class="section-num">02 — Inspect</div>
+      <h2>3D Model View</h2>
+    </div>
+  </div>
+  <div class="model-grid">
+    <div class="big-canvas-wrap" id="big-canvas-wrap"></div>
+    <div>
+      <div class="control-block">
+        <div class="control-label"><span>Select model</span></div>
+        <select id="model-select" style="width:100%;padding:12px;background:rgba(244,242,236,0.06);color:var(--paper);border:1px solid rgba(244,242,236,0.25);font-family:var(--font-mono);font-size:12px;border-radius:2px;">
+          <option value="0">01 — Riverline Tower</option>
+          <option value="1">02 — Atrium Pavilion</option>
+          <option value="2">03 — Civic Hall</option>
+          <option value="3">04 — Terrace Residence</option>
+        </select>
+      </div>
+
+      <div class="control-block">
+        <div class="control-label"><span>Wireframe</span></div>
+        <div class="toggle-row">
+          <span style="font-size:13px;color:rgba(244,242,236,0.75);">Show structural mesh only</span>
+          <div class="switch" id="wire-switch"></div>
+        </div>
+      </div>
+
+      <div class="control-block">
+        <div class="control-label"><span>Sun angle</span><span id="sun-val">45°</span></div>
+        <input type="range" id="sun-slider" min="5" max="175" value="45">
+      </div>
+
+      <div class="control-block">
+        <div class="control-label"><span>Floor selector</span><span id="floor-val">All floors</span></div>
+        <div class="floor-select" id="floor-chips"></div>
+      </div>
+
+      <div class="control-block" style="border-top:1px solid rgba(244,242,236,0.15); padding-top:18px;">
+        <div class="control-label"><span>Drag to rotate · scroll to zoom</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="container reveal">
+  <div class="section-head">
+    <div>
+      <div class="section-num">03 — The Studio</div>
+      <h2>About</h2>
+    </div>
+  </div>
+  <div class="about-grid">
+    <div>
+      <p>Meridian Studio is a small architecture visualization practice. We take a firm's plans and elevations and rebuild them as interactive 3D models — so a client can rotate a tower, strip it to wireframe, drag the sun across the sky, and isolate a single floor, all before construction begins.</p>
+      <p>We work directly with architects during design development, using the same model for internal review, planning submissions, and client presentations — one source of geometry, many audiences.</p>
+    </div>
+    <div>
+      <div class="stat-list">
+        <div class="stat"><b>04</b><span>Active projects</span></div>
+        <div class="stat"><b>360°</b><span>Model rotation</span></div>
+        <div class="stat"><b>12</b><span>Max floors modeled</span></div>
+        <div class="stat"><b>2</b><span>View modes</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="container reveal">
+  <div class="section-head">
+    <div>
+      <div class="section-num">04 — Get in touch</div>
+      <h2>Contact</h2>
+    </div>
+  </div>
+  <div class="contact-grid">
+    <div>
+      <p style="font-size:16px;line-height:1.7;color:#3c4a5e;">Send an inquiry about a project, a commission, or a walkthrough of the model viewer. We reply within two working days.</p>
+    </div>
+    <form id="inquiry-form">
+      <div class="field">
+        <label for="f-name">Name</label>
+        <input type="text" id="f-name" required>
+      </div>
+      <div class="field">
+        <label for="f-email">Email</label>
+        <input type="email" id="f-email" required>
+      </div>
+      <div class="field">
+        <label for="f-project">Project of interest</label>
+        <select id="f-project">
+          <option>Riverline Tower</option>
+          <option>Atrium Pavilion</option>
+          <option>Civic Hall</option>
+          <option>Terrace Residence</option>
+          <option>General inquiry</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="f-message">Message</label>
+        <textarea id="f-message" required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Send inquiry</button>
+      <div class="form-msg" id="form-msg"></div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Meridian Studio</span>
+  <span>Mtech-Web26012 — 3D Architecture Studio Site</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+<button id="scrollTopBtn">↑</button>
+
+<button id="themeToggle">
+    🌙
+</button>
+</html>
